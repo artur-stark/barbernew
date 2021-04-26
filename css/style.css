@@ -69,6 +69,9 @@ body{
 	padding: 26px 20px; 
 	position: relative;
 }
+.nav-menu a:hover, .login a:hover{
+	background-color: #242424;
+}
 .login{
 	width:140px;
 	display: flex;
@@ -517,6 +520,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-right: 10px;
 }
 .inner-navigation-wrapper{
 	min-height: 72px;
@@ -547,6 +551,7 @@ body{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	margin-bottom: 58px;
 }
 .path-item{
@@ -746,4 +751,79 @@ body{
 }
 .shop-page:hover{
 	background-color: #fff;
+}
+.item-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.item-images{
+	width: 460px;
+}
+.images-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.images-list li{
+	width: 140px;
+	box-shadow: 0 0 15px 1px rgba(0,0,0,0.2);
+}
+.images-list li:first-of-type{
+	width: 460px;
+	margin-bottom: 20px;
+}
+.item-features{
+	width: 390px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.availability-article{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.article{
+	color: #aeaeae;
+}
+.item-description{
+	margin:0 0 38px 0;
+}
+.item-features .price-buy{
+	margin: 0 0 66px 0;
+}
+.complect{
+	margin-bottom: 10px;
+}
+.complect h3{
+	margin: 0;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+.barber-minilist{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.barber-minilist li{
+	padding-left: 21px;
+	position: relative;
+	margin-bottom: 4px;
+}
+.barber-minilist li::before{
+	display: block;
+	content: "";
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	background-color: #000;
+	transform: rotate(45deg);
+	top:8px;
+	left: 0;
 }
