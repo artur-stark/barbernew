@@ -341,6 +341,10 @@ body{
 .copyright a{
 	margin-top: 12px;
 }
+.copyright .button:hover{
+	color: #000;
+	background-color: #fff;
+}
 .modal{
 	background-image: url("../img/maincolumnbg.jpg");
 	background-color: #f6f3f0;
@@ -816,6 +820,9 @@ body{
 	position: relative;
 	margin-bottom: 4px;
 }
+.biglist li{
+  margin-bottom: 17px;
+}
 .barber-minilist li::before{
 	display: block;
 	content: "";
@@ -826,4 +833,83 @@ body{
 	transform: rotate(45deg);
 	top:8px;
 	left: 0;
+}
+.price-header{
+	margin:0;
+	font-size: 48px;
+	line-height: 48px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 73px;
+}
+.price-header::before{
+	display: block;
+	content: "";
+	width: 10px;
+	height: 2px;
+	background-color: #000;
+	flex-shrink: 0;
+	flex-grow: 1;
+	align-self: center;
+	margin-right: 27px;
+}
+.price-header::after{
+	display: block;
+	content: "";
+	width: 10px;
+	height: 2px;
+	background-color: #000;
+	flex-shrink: 0;
+	flex-grow: 1;
+	align-self: center;
+	margin-left: 27px;
+}
+.pricesection-header{
+	margin:0;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.using-service-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 66px;
+}
+.using-items{
+	width:240px;
+}
+.service-price{
+	width: 460px;
+}
+.service-table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+	line-height: 24px;
+}
+.service-table td{
+	border:2px solid #000;
+	width: 50%;
+	padding:7px 0 7px 17px; 
+}
+.service-table td:nth-of-type(2n){
+	text-align: center;
+	padding-left: 0;
+}
+.about-us{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+.about-us p{
+	margin:0;
+	width: 383px;
+	font-size: 14px;
+	line-height: 24px;
 }
